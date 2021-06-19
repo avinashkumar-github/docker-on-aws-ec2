@@ -9,6 +9,7 @@ Can SSH into the Virtual machine or EC2 instance, and execute the following comm
 sudo yum update -y  //To update all binaries if outdated
 sudo yum install docker -y  // To install docker binary
 docker -v  //To check the version that installed
+sudo service docker start // start the docker as a service
 
 sudo usermod -a -G docker ec2-user  // Adding the ec2-user or any other user respective to the instance machine on to the docker group. To avoid using the "sudo" on below listed commands. Alternative can use below command by placing sudo at the front
 
